@@ -29,7 +29,7 @@ try {
 }
 
 app.listen(port, () => {
-  console.log("server running on port 8080");
+  console.log("server running on port 5000");
 });
 
 // Create a map to store the auth requests and their session IDs

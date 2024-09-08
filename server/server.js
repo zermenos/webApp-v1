@@ -39,7 +39,7 @@ const requestMap = new Map();
 async function getAuthRequest(req, res) {
   // Audience is verifier id
   const hostUrl =
-    "https://9e28-2806-230-101a-c281-32d7-5abf-e605-6fe6.ngrok-free.app";
+    "http://localhost:5000";
   const sessionId = 1;
   const callbackURL = "/api/callback";
   const audience =
@@ -104,9 +104,9 @@ async function getAuthRequest(req, res) {
     callbackUrl: `${hostUrl}${callbackURL}?sessionId=${sessionId}`,
     //audience,
     verifierDid:
-      "did:polygonid:polygon:amoy:2qb8zJTJCC2ZxaXx6Uj92ptybzjhapF1tHzZMBmY1w",
+      //"did:polygonid:polygon:amoy:2qb8zJTJCC2ZxaXx6Uj92ptybzjhapF1tHzZMBmY1w",
     //"did:polygonid:polygon:amoy:2qUkeEY3eeDELgCdgnRvTzFU1DURomnAXbzwxKCfBx",
-    //"did:polygonid:polygon:amoy:2qQ68JkRcf3xrHPQPWZei3YeVzHPP58wYNxx2mEouR",
+    "did:polygonid:polygon:amoy:2qQ68JkRcf3xrHPQPWZei3YeVzHPP58wYNxx2mEouR",
     //"did:iden3:privado:main:28itzVLBHnMJV8sdjyffcAtWCx8HZ7btdKXxs7fJ6v",
   };
   // Encode the verification request to base64

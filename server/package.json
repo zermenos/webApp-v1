@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server",
+    "build": "react-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iden3/js-iden3-auth": "^1.4.0",
+    "express": "^4.19.2",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "type": "module"
+}
